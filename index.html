@@ -1,10 +1,163 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html lang="en" style="width:100%; height:100%;">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Jonathan's Project Links</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            font-family: Verdana, sans-serif;
+        }
+        aside {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #8bb885;
+            padding: 0;
+        }
+        .right-content {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fcfbe4;
+            padding: 20px;
+        }
+        .left-container {
+            width: 50%;
+            height: 80%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .photo {
+            width: 100%;
+            border-radius: 50%;
+        }
+        .social-media-container {
+            flex: 1;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center; 
+            padding: 20px 10px 10px 10px;
+        }
+        .app-icon {
+            height: 50px;
+        }
+        .app-icon:hover {
+            filter: brightness(50%);
+        }
+        .description {
+            flex: 2;
+            padding: 0 10px;
+            color: #fcfbe4;
+            text-align: center;
+        }   
+        .description h1 {
+            margin: 0px;
+            font-size: 30px;
+        }  
+        .description p {
+            margin: 10px 0;
+            line-height: 1.5;
+        }  
+        .description ul {
+            display: inline-block;
+            text-align: left;
+            margin: 10px;
+        }
+        .description li {
+            list-style-position: outside;
+            margin-bottom: 5px;
+        }
+        .right-container {
+            width: 75%;
+            height: 50%;
+            padding: 20px;
+            color:#5c5c5c;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .right-container h1 {
+            font-size: 40px;
+            color: #8bb885;
+            margin: 10px 0;
+        }
+        .right-container p {
+            margin: 10px 0;
+            line-height: 1.5;
+        }  
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        .tag {
+            padding: 5px 10px;
+            border-radius: 15px;
+            border: 1px solid #5c5c5c;
+            color:#5c5c5c;
+            text-decoration: none;
+        }
+        .tag:hover {
+            color: #ff5722; 
+            cursor: pointer;
+        }
+        .footer-container {
+            text-align: right;
+        }
+        .footer-container a {
+            color: #8bb885;
+            font-weight: bold;
+        }
+        .footer-container a:hover {
+            color: #ff5722;
+        }
+    </style>
 </head>
-  <body style="width:100%; height:100%; margin:0;">
-    <iframe src="https://docs.google.com/gview?url=https://github.com/jspreiss/jspreiss.github.io/raw/main/ProjectLinks.pdf&embedded=true" style="width:100%; height:100%;" frameborder="0"></iframe>
-  </body>
+<body>
+    <aside>
+        <div class="left-container">
+            <img src="me.jpg" class="photo">
+            <div class="social-media-container">
+                <a href="https://www.linkedin.com/in/jonathan-preiss/" target="_blank"><img src="LinkedIn_logo_initials.png" class="app-icon" title="Linkedin"></a>
+                <a href="https://www.instagram.com/jonathanpreiss/" target="_blank"><img src="Instagram_icon.png" class="app-icon" title="Instagram"></a>
+                <a href="https://github.com/jspreiss" target="_blank"><img src="Github_icon.png" class="app-icon" title="Github"></a>
+            </div>
+            <div class="description">
+                <h1>Jonathan Preiss</h1>
+                <p><i>20 | Fremont, CA</i></p>
+                <ul>
+                    <li>Santa Clara University CSE '26</li>
+                    <li>Aspiring Software Engineer w/ Full Stack and GIS Experience</li>
+                    <li>Enjoys lifting, sports, trying new foods, and traveling the world</li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <div class="right-content">
+        <div class="right-container">
+            <h1>Coursework: An Overview</h1>
+            <div class="tag-container">
+                <a href="articles.html?tag=Computer%20Networks" class="tag" style="background-color:#ffdcf7">Computer Networks</a>
+                <a href="articles.html?tag=Databases" class="tag" style="background-color:#f7e6d1">Databases</a>
+                <a href="articles.html?tag=Web%20Development" class="tag" style="background-color:#d0e4fa">Web Development</a> 
+            </div>
+            <p><i>January 9, 2025</i></p>
+            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Venenatis leo ipsum dapibus nascetur sapien lorem odio in justo. Himenaeos ipsum dignissim erat senectus sit platea placerat.</p>
+            <p>Nam praesent luctus amet dictum tempus massa praesent pulvinar conubia. Pulvinar interdum congue primis dignissim; finibus rutrum aenean. Finibus magna ullamcorper commodo dapibus donec congue morbi. Facilisi condimentum platea mauris laoreet nisi tellus ut.</p>
+            <div class="footer-container">
+                <span><a href="articles.html">View All</a></span>
+                <span> | </span>
+                <span><a href="article.html">Continue</a></span>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
